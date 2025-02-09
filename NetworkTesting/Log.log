@@ -1,0 +1,51 @@
+2025-02-09 17:41:58 - __main__  [DEBUG]: Task added to the queue
+2025-02-09 17:41:58 - __main__  [DEBUG]: Task added to the queue
+2025-02-09 17:41:58 - __main__  [DEBUG]: Task added to the queue
+2025-02-09 17:41:58 - __main__  [DEBUG]: Task added to the queue
+2025-02-09 17:42:19 - __main__  [DEBUG]: Task added to the queue
+2025-02-09 17:42:20 - __main__  [DEBUG]: Task added to the queue
+2025-02-09 17:42:41 - __main__  [DEBUG]: Task added to the queue
+2025-02-09 17:42:42 - __main__  [DEBUG]: Task added to the queue
+2025-02-09 17:43:04 - __main__  [DEBUG]: Task added to the queue
+2025-02-09 17:43:05 - __main__  [DEBUG]: Task added to the queue
+2025-02-09 17:43:27 - __main__  [INFO]: {
+  "start_time": "2025-02-09 17:41:58",
+  "end_time": "2025-02-09 17:43:27",
+  "rate": "10 packets/sec",
+  "results": {
+    "2001:B000:168::1": {
+      "RTT_samples": [
+        33.807992935180664,
+        31.701326370239258,
+        31.960725784301758,
+        34.200191497802734
+      ],
+      "RTT_avg": "32.918ms",
+      "RTT_max": "34.2ms",
+      "packet_loss": "0.0%"
+    },
+    "8.8.8.8": {
+      "RTT_samples": [
+        33.807992935180664,
+        33.21075439453125,
+        39.09921646118164,
+        34.200191497802734
+      ],
+      "RTT_avg": "35.08ms",
+      "RTT_max": "39.099ms",
+      "packet_loss": "0.0%"
+    },
+    "192.168.1.1": {
+      "RTT_samples": [],
+      "RTT_avg": "0.0ms",
+      "RTT_max": "0.0ms",
+      "packet_loss": "1.0%"
+    },
+    "192.168.1.2": {
+      "RTT_samples": [],
+      "RTT_avg": "0.0ms",
+      "RTT_max": "0.0ms",
+      "packet_loss": "1.0%"
+    }
+  }
+}

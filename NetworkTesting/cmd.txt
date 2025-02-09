@@ -1,0 +1,1 @@
+ python .\NetworkTesting.py --targets 192.168.1.1 8.8.8.8 2001:B000:168::1 192.168.1.2 --duration 5 --rate 10 -v
