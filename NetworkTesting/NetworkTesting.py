@@ -5,10 +5,10 @@ import asyncio
 import datetime
 import logging
 import json
-import uuid
 from typing import Awaitable, Callable
 from icmplib import async_ping
 from datetime import datetime
+from functools import wraps, partial
 
 
 class ping_parameter:
@@ -45,9 +45,8 @@ class Scheduler:
 
     async def add_task(self, execution :Awaitable, *args, **kwargs):
          async with self.__lock:
-            wrapped_execution = self.__wrap_execution(execution, uuid.uuid4(), *args, **kwargs)
+            wrapped_execution = self.__wrap_execution(execution, *args, **kwargs)
             await self.__queue.put(wrapped_execution) 
-            self.__logger.debug(f"Task added to the queue")
 
     async def __asynciohandle(self):
         while self.__event.is_set():
@@ -57,15 +56,12 @@ class Scheduler:
                         while not self.__queue.empty():
                             execution = await self.__queue.get()
                             task = self.__loop.create_task(execution())
+                            task.add_done_callback(lambda t: self.__tasks.discard(t))
                             self.__tasks.add(task)
 
                     for completed_task in asyncio.as_completed(self.__tasks):
                         try:
                             result = await completed_task
-                            async with self.__lock:
-                                task = next((_task for _task in self.__tasks if getattr(_task.get_coro(), 'id', None) == getattr(completed_task, 'id', None)), None)
-                                if task:
-                                    self.__tasks.discard(task)
                             await self.__callback(result)
                         except Exception as e:
                             self.__logger.error(f"Task execution failed: {e}")
@@ -76,9 +72,8 @@ class Scheduler:
             except Exception as e:
                 self.__logger.error(f"Scheduler encountered an error: {e}")
                     
-    def __wrap_execution(self, execution: Awaitable, task_id, *args, **kwargs):
+    def __wrap_execution(self, execution: Awaitable, *args, **kwargs): 
         async def wrapper():
-            execution.id = task_id
             return await execution(*args, **kwargs)
         return wrapper
         
@@ -116,6 +111,7 @@ class TestHandler:
                     parameter.retry_count -= 1
                     self.__loop.create_task(self.__create_test_task([parameter]))
                     return
+            self.__logger.debug("{0} done.".format(response["address"]))
             self.__result[response["address"]] = {
                                                 "RTT_samples":response["rtts"],
                                                 "RTT_avg":str(response["avg_rtt"]) + "ms",
@@ -161,7 +157,6 @@ async def main():
     retry_count = args.retry_count if args.retry_count else 3
     retry_interval = args.retry_interval if args.retry_interval else 2
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO)
-
     formatter = logging.Formatter("%(asctime)s - %(name)s  [%(levelname)s]: %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
     logger = logging.getLogger(__name__)
     file_handler = logging.FileHandler("Log.log")

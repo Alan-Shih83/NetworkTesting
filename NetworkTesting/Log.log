@@ -49,3 +49,342 @@
     }
   }
 }
+2025-02-10 12:53:38 - __main__  [DEBUG]: Task added to the queue
+2025-02-10 12:53:38 - __main__  [DEBUG]: Task added to the queue
+2025-02-10 12:53:38 - __main__  [DEBUG]: Task added to the queue
+2025-02-10 12:53:38 - __main__  [DEBUG]: Task added to the queue
+2025-02-10 12:53:59 - __main__  [DEBUG]: Task added to the queue
+2025-02-10 12:54:00 - __main__  [DEBUG]: Task added to the queue
+2025-02-10 12:54:21 - __main__  [DEBUG]: Task added to the queue
+2025-02-10 12:54:22 - __main__  [DEBUG]: Task added to the queue
+2025-02-10 12:54:44 - __main__  [DEBUG]: Task added to the queue
+2025-02-10 12:54:45 - __main__  [DEBUG]: Task added to the queue
+2025-02-10 12:55:07 - __main__  [INFO]: {
+  "start_time": "2025-02-10 12:53:38",
+  "end_time": "2025-02-10 12:55:07",
+  "rate": "10 packets/sec",
+  "results": {
+    "2001:B000:168::1": {
+      "RTT_samples": [
+        27.411222457885742,
+        28.73992919921875,
+        26.14879608154297,
+        19.904613494873047
+      ],
+      "RTT_avg": "25.551ms",
+      "RTT_max": "28.74ms",
+      "packet_loss": "0.0%"
+    },
+    "8.8.8.8": {
+      "RTT_samples": [
+        25.339126586914062,
+        28.73992919921875,
+        22.110939025878906,
+        23.36740493774414
+      ],
+      "RTT_avg": "24.889ms",
+      "RTT_max": "28.74ms",
+      "packet_loss": "0.0%"
+    },
+    "192.168.1.1": {
+      "RTT_samples": [],
+      "RTT_avg": "0.0ms",
+      "RTT_max": "0.0ms",
+      "packet_loss": "1.0%"
+    },
+    "192.168.1.2": {
+      "RTT_samples": [],
+      "RTT_avg": "0.0ms",
+      "RTT_max": "0.0ms",
+      "packet_loss": "1.0%"
+    }
+  }
+}
+2025-02-10 12:58:36 - __main__  [DEBUG]: Task dad88681-60b6-4d40-87fd-c1812160f735 added to the queue
+2025-02-10 12:58:36 - __main__  [DEBUG]: Task c9157357-a59d-4bb3-8ef4-8d566c314995 added to the queue
+2025-02-10 12:58:36 - __main__  [DEBUG]: Task c6d680a5-477b-4ae5-927a-e9f7a21b5d42 added to the queue
+2025-02-10 12:58:36 - __main__  [DEBUG]: Task ac74f15c-6f7d-41dc-aab7-eed22c87e604 added to the queue
+2025-02-10 12:58:37 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 12:58:38 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 12:58:59 - __main__  [DEBUG]: Task e18d726d-c62e-4657-aaf1-07ed03322411 added to the queue
+2025-02-10 12:58:59 - __main__  [DEBUG]: Task 0dad219e-00b3-498c-b0ba-f13052882ccd added to the queue
+2025-02-10 12:58:59 - __main__  [DEBUG]: Task 2f8094b1-ae5e-4c52-84ef-5fb94865253d added to the queue
+2025-02-10 12:58:59 - __main__  [DEBUG]: Task 8aed9217-4e20-45a7-a34a-8487fa81d89c added to the queue
+2025-02-10 12:59:01 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 12:59:02 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 12:59:21 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 12:59:21 - __main__  [DEBUG]: Task 392e591f-08b5-4bf5-a73f-94d674d88371 added to the queue
+2025-02-10 12:59:22 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 12:59:22 - __main__  [DEBUG]: Task 9aa2e4bd-1e5e-43c7-a633-dc788623da4e added to the queue
+2025-02-10 12:59:41 - __main__  [DEBUG]: Task f628251d-b496-4ce7-809e-96d5f3d0346a added to the queue
+2025-02-10 12:59:41 - __main__  [DEBUG]: Task 52ed2c1c-451f-4f14-a5e5-f8142778ccd1 added to the queue
+2025-02-10 12:59:41 - __main__  [DEBUG]: Task ea4af366-e920-42d6-a72e-f66e62f435fb added to the queue
+2025-02-10 12:59:41 - __main__  [DEBUG]: Task 444f08df-ae51-490a-a07f-666c64e7be29 added to the queue
+2025-02-10 12:59:43 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 12:59:44 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 13:00:20 - __main__  [DEBUG]: Task 975cbd45-2574-4ebc-8040-d30a35a5eb1d added to the queue
+2025-02-10 13:00:20 - __main__  [DEBUG]: Task eefffd49-5959-4703-a2ce-faa7c8fb7d4d added to the queue
+2025-02-10 13:00:20 - __main__  [DEBUG]: Task fe1651ee-3030-49ca-b822-69d261c840c3 added to the queue
+2025-02-10 13:00:20 - __main__  [DEBUG]: Task 2b9723e3-aea7-4490-a72c-6a159065681a added to the queue
+2025-02-10 13:00:22 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 13:00:23 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 13:00:42 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 13:00:42 - __main__  [DEBUG]: Task a45152ba-f4f8-462d-bb1f-83e3d8c206c3 added to the queue
+2025-02-10 13:00:43 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 13:00:43 - __main__  [DEBUG]: Task c2bf29c4-bfe1-48f9-a534-a6e2fe6d7f2f added to the queue
+2025-02-10 13:01:04 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 13:01:04 - __main__  [DEBUG]: Task a3c4ec58-5c08-4abb-a0d6-7ddbd97e804d added to the queue
+2025-02-10 13:01:05 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 13:01:05 - __main__  [DEBUG]: Task 04aa9550-fa20-4ff1-8e6b-0966ff847b30 added to the queue
+2025-02-10 13:01:26 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 13:01:26 - __main__  [DEBUG]: Task 5fc88943-f216-4be4-9fa0-a96656894440 added to the queue
+2025-02-10 13:01:27 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 13:01:27 - __main__  [DEBUG]: Task c9360458-3e10-4899-a53a-efdf18d93b76 added to the queue
+2025-02-10 13:01:49 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 13:01:50 - __main__  [DEBUG]: Task None deleted from tasks
+2025-02-10 13:01:50 - __main__  [INFO]: {
+  "start_time": "2025-02-10 13:00:20",
+  "end_time": "2025-02-10 13:01:50",
+  "rate": "10 packets/sec",
+  "results": {
+    "2001:B000:168::1": {
+      "RTT_samples": [
+        38.28024864196777,
+        26.732921600341797,
+        31.989574432373047,
+        50.1554012298584
+      ],
+      "RTT_avg": "36.79ms",
+      "RTT_max": "50.155ms",
+      "packet_loss": "0.0%"
+    },
+    "8.8.8.8": {
+      "RTT_samples": [
+        58.001041412353516,
+        20.937681198120117,
+        31.989574432373047,
+        50.1554012298584
+      ],
+      "RTT_avg": "40.271ms",
+      "RTT_max": "58.001ms",
+      "packet_loss": "0.0%"
+    },
+    "192.168.1.2": {
+      "RTT_samples": [],
+      "RTT_avg": "0.0ms",
+      "RTT_max": "0.0ms",
+      "packet_loss": "1.0%"
+    },
+    "192.168.1.1": {
+      "RTT_samples": [],
+      "RTT_avg": "0.0ms",
+      "RTT_max": "0.0ms",
+      "packet_loss": "1.0%"
+    }
+  }
+}
+2025-02-10 21:08:32 - __main__  [DEBUG]: Task 308bc9be-8e9b-4e84-80da-f5707d77f86e added to the queue
+2025-02-10 21:20:58 - __main__  [DEBUG]: Task 314d4679-5e9f-44f5-9850-7edd62afe6ff added to the queue
+2025-02-10 21:23:04 - __main__  [DEBUG]: Task 7a80463d-9c6c-40b2-ab35-1b72ef4f9449 added to the queue
+2025-02-10 21:23:04 - __main__  [DEBUG]: Task 62bc3854-8d2d-463a-baf0-35c8dac8c5f9 added to the queue
+2025-02-10 21:23:54 - __main__  [DEBUG]: Task c94dc6bd-53c5-4dcc-874e-f0cf1471c07b added to the queue
+2025-02-10 21:24:55 - __main__  [INFO]: {
+  "start_time": "2025-02-10 21:23:04",
+  "end_time": "2025-02-10 21:24:55",
+  "rate": "10 packets/sec",
+  "results": {
+    "8.8.8.8": {
+      "RTT_samples": [
+        21.74067497253418,
+        48.61187934875488,
+        22.23801612854004,
+        32.33528137207031
+      ],
+      "RTT_avg": "31.231ms",
+      "RTT_max": "48.612ms",
+      "packet_loss": "0.0%"
+    },
+    "192.168.1.1": {
+      "RTT_samples": [],
+      "RTT_avg": "0.0ms",
+      "RTT_max": "0.0ms",
+      "packet_loss": "1.0%"
+    }
+  }
+}
+2025-02-10 21:25:03 - __main__  [DEBUG]: Task 24361d5b-41d6-4f12-ac90-562963450a3f added to the queue
+2025-02-10 21:25:03 - __main__  [DEBUG]: Task 0572ef57-d005-4174-a88e-5f37e2d5c769 added to the queue
+2025-02-10 21:25:37 - __main__  [DEBUG]: Task a5fc5b0c-d1ca-47c9-aff3-434c50e75d7a added to the queue
+2025-02-10 21:30:54 - __main__  [DEBUG]: Task b6e38d11-9db8-4668-a873-3e8836c8ca93 added to the queue
+2025-02-10 21:30:54 - __main__  [DEBUG]: Task f0ab1a74-a26d-4c8a-bb9d-54a39d8b2f98 added to the queue
+2025-02-10 21:30:56 - __main__  [ERROR]: Task execution failed: vars() argument must have __dict__ attribute
+2025-02-10 21:31:20 - __main__  [DEBUG]: Task 34cfdd1c-e68b-456f-9421-afac68b929a4 added to the queue
+2025-02-10 21:31:20 - __main__  [DEBUG]: Task 573a51eb-bfbd-42e2-8aab-f849ba9959a6 added to the queue
+2025-02-10 21:39:03 - __main__  [DEBUG]: Task 8c401c6b-0af4-4fe7-825f-592f9c8f7ae8 added to the queue
+2025-02-10 21:39:03 - __main__  [DEBUG]: Task 7e18806f-44aa-4ec4-beea-288480fba5d7 added to the queue
+2025-02-10 21:41:17 - __main__  [DEBUG]: Task 47a4044a-8dde-4385-89f1-64de0e0a84b8 added to the queue
+2025-02-10 21:41:17 - __main__  [DEBUG]: Task e73b9c77-9ec1-4338-9f25-c361572d3d89 added to the queue
+2025-02-10 21:43:08 - __main__  [DEBUG]: Task decbf405-0e63-47f2-b3e9-fc086e25d5f2 added to the queue
+2025-02-10 21:43:08 - __main__  [DEBUG]: Task c7e14277-189e-486a-ac75-d34afa85b9d1 added to the queue
+2025-02-10 21:45:25 - __main__  [DEBUG]: Task 8995787c-3d3b-456f-a01b-fd9c84d27fd1 added to the queue
+2025-02-10 21:46:04 - __main__  [DEBUG]: Task 7f07dc3f-7794-4068-a63a-467ddd91a3e6 added to the queue
+2025-02-10 21:46:04 - __main__  [DEBUG]: Task e1215750-4141-4ef9-85fe-8bf9e1876a85 added to the queue
+2025-02-10 21:53:32 - __main__  [DEBUG]: Task c5fa7c66-9e75-43e7-ae8b-617d10ea9659 added to the queue
+2025-02-10 21:53:32 - __main__  [DEBUG]: Task 2cab7fa2-10ba-47df-ae35-b84085590b92 added to the queue
+2025-02-10 21:58:13 - __main__  [DEBUG]: Task 9af705c0-3c80-4f65-a027-d209443635fe added to the queue
+2025-02-10 21:58:13 - __main__  [DEBUG]: Task 1f1c1f40-16ec-49e7-8d97-84808024d61b added to the queue
+2025-02-10 21:58:14 - __main__  [ERROR]: Scheduler encountered an error: 'coroutine' object is not callable
+2025-02-10 21:58:14 - __main__  [ERROR]: Scheduler encountered an error: 'coroutine' object is not callable
+2025-02-10 22:03:41 - __main__  [DEBUG]: Task f4b70096-100e-450d-b5fd-8c6aa2aeb5bc added to the queue
+2025-02-10 22:03:41 - __main__  [DEBUG]: Task b897f9bb-ca17-4508-8e64-8296d60b8977 added to the queue
+2025-02-10 22:08:05 - __main__  [DEBUG]: Task f9c3bbf5-13c1-454f-a8e9-78f5a21aacc4 added to the queue
+2025-02-10 22:08:05 - __main__  [DEBUG]: Task db16f64e-6cba-4ede-8a78-6664db0b4cfc added to the queue
+2025-02-10 22:09:12 - __main__  [DEBUG]: Task ba839b16-bfbf-4767-8fe5-5df6b1423fe8 added to the queue
+2025-02-10 22:09:12 - __main__  [DEBUG]: Task ecc36508-8797-4a6c-9b74-7ac60ce0bd96 added to the queue
+2025-02-10 22:10:28 - __main__  [DEBUG]: Task 53613af1-d5da-4873-b801-204fa6ef0017 added to the queue
+2025-02-10 22:10:28 - __main__  [DEBUG]: Task 81727eda-b108-47db-890d-9f5ba0798db7 added to the queue
+2025-02-10 22:10:42 - __main__  [DEBUG]: Task bd290166-4564-43a9-9777-9bf329eb6242 added to the queue
+2025-02-10 22:10:42 - __main__  [DEBUG]: Task 1818c30c-e4f5-4e57-aa27-18c568fef043 added to the queue
+2025-02-10 22:33:27 - __main__  [DEBUG]: Task 084438d3-bec1-466c-9871-5c264c68b94b added to the queue
+2025-02-10 22:33:27 - __main__  [DEBUG]: Task ce75390b-75a6-4532-ab72-4ce047624c57 added to the queue
+2025-02-10 22:33:48 - __main__  [DEBUG]: Task 24ba5da6-4349-49b4-a1b7-b6db71728606 added to the queue
+2025-02-10 22:34:09 - __main__  [INFO]: {
+  "start_time": "2025-02-10 22:33:27",
+  "end_time": "2025-02-10 22:34:09",
+  "rate": "10 packets/sec",
+  "results": {
+    "8.8.8.8": {
+      "RTT_samples": [
+        19.76466178894043,
+        31.922578811645508,
+        19.060134887695312,
+        22.975921630859375
+      ],
+      "RTT_avg": "23.431ms",
+      "RTT_max": "31.923ms",
+      "packet_loss": "0.0%"
+    },
+    "192.168.1.1": {
+      "RTT_samples": [],
+      "RTT_avg": "0.0ms",
+      "RTT_max": "0.0ms",
+      "packet_loss": "1.0%"
+    }
+  }
+}
+2025-02-10 22:43:09 - __main__  [DEBUG]: 8.8.8.8 done.
+2025-02-10 22:43:50 - __main__  [DEBUG]: 192.168.1.1 done.
+2025-02-10 22:43:50 - __main__  [INFO]: {
+  "start_time": "2025-02-10 22:43:07",
+  "end_time": "2025-02-10 22:43:50",
+  "rate": "10 packets/sec",
+  "results": {
+    "8.8.8.8": {
+      "RTT_samples": [
+        36.93962097167969,
+        33.17070007324219,
+        48.58279228210449,
+        66.81632995605469
+      ],
+      "RTT_avg": "46.377ms",
+      "RTT_max": "66.816ms",
+      "packet_loss": "0.0%"
+    },
+    "192.168.1.1": {
+      "RTT_samples": [],
+      "RTT_avg": "0.0ms",
+      "RTT_max": "0.0ms",
+      "packet_loss": "1.0%"
+    }
+  }
+}
+2025-02-10 22:44:44 - __main__  [DEBUG]: 2001:B000:168::1 done.
+2025-02-10 22:44:45 - __main__  [DEBUG]: 8.8.8.8 done.
+2025-02-10 22:45:26 - __main__  [DEBUG]: 192.168.1.1 done.
+2025-02-10 22:45:27 - __main__  [DEBUG]: 192.168.1.2 done.
+2025-02-10 22:45:27 - __main__  [INFO]: {
+  "start_time": "2025-02-10 22:44:42",
+  "end_time": "2025-02-10 22:45:27",
+  "rate": "10 packets/sec",
+  "results": {
+    "2001:B000:168::1": {
+      "RTT_samples": [
+        63.29464912414551,
+        17.818689346313477,
+        47.158002853393555,
+        22.945404052734375
+      ],
+      "RTT_avg": "37.804ms",
+      "RTT_max": "63.295ms",
+      "packet_loss": "0.0%"
+    },
+    "8.8.8.8": {
+      "RTT_samples": [
+        63.29464912414551,
+        35.44473648071289,
+        47.158002853393555,
+        31.01944923400879
+      ],
+      "RTT_avg": "44.229ms",
+      "RTT_max": "63.295ms",
+      "packet_loss": "0.0%"
+    },
+    "192.168.1.1": {
+      "RTT_samples": [],
+      "RTT_avg": "0.0ms",
+      "RTT_max": "0.0ms",
+      "packet_loss": "1.0%"
+    },
+    "192.168.1.2": {
+      "RTT_samples": [],
+      "RTT_avg": "0.0ms",
+      "RTT_max": "0.0ms",
+      "packet_loss": "1.0%"
+    }
+  }
+}
+2025-02-10 22:46:56 - __main__  [DEBUG]: 8.8.8.8 done.
+2025-02-10 22:46:57 - __main__  [DEBUG]: 2001:B000:168::1 done.
+2025-02-10 22:47:38 - __main__  [DEBUG]: 192.168.1.2 done.
+2025-02-10 22:47:39 - __main__  [DEBUG]: 192.168.1.1 done.
+2025-02-10 22:47:39 - __main__  [INFO]: {
+  "start_time": "2025-02-10 22:46:54",
+  "end_time": "2025-02-10 22:47:39",
+  "rate": "10 packets/sec",
+  "results": {
+    "8.8.8.8": {
+      "RTT_samples": [
+        30.24768829345703,
+        50.115108489990234,
+        37.22834587097168,
+        31.960010528564453
+      ],
+      "RTT_avg": "37.388ms",
+      "RTT_max": "50.115ms",
+      "packet_loss": "0.0%"
+    },
+    "2001:B000:168::1": {
+      "RTT_samples": [
+        46.486616134643555,
+        50.115108489990234,
+        37.22834587097168,
+        31.960010528564453
+      ],
+      "RTT_avg": "41.448ms",
+      "RTT_max": "50.115ms",
+      "packet_loss": "0.0%"
+    },
+    "192.168.1.2": {
+      "RTT_samples": [],
+      "RTT_avg": "0.0ms",
+      "RTT_max": "0.0ms",
+      "packet_loss": "1.0%"
+    },
+    "192.168.1.1": {
+      "RTT_samples": [],
+      "RTT_avg": "0.0ms",
+      "RTT_max": "0.0ms",
+      "packet_loss": "1.0%"
+    }
+  }
+}
