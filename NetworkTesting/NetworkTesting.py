@@ -21,8 +21,8 @@ class ping_parameter:
 
 class Scheduler:
     def __init__(self, callback:Callable[[type], Awaitable[None]]):
-        self.__tasks = set()
         self.__queue = asyncio.Queue()
+        self.__completed_queue = asyncio.Queue()
         self.__logger = logging.getLogger(__name__)
         self.__callback = callback
         self.__event = asyncio.Event()
@@ -37,11 +37,16 @@ class Scheduler:
         return self
 
     async def stop(self):
-        self.__event.clear()  
-        if self.__tasks:
-            await asyncio.gather(*self.__tasks, return_exceptions=True) 
-        if self.__main_task:
-            await self.__main_task 
+        try:
+            self.__event.clear()  
+            async with self.__lock:
+                if self.__queue.qsize() > 0:
+                    tasks = [await self.__queue.get() for _ in range(self.__queue.qsize())]
+                    await asyncio.gather(*tasks, return_exceptions=True) 
+            if self.__main_task:
+                await self.__main_task 
+        except Exception as e:
+            self.__logger.error("Scheduler stop function encountered an error: {0}".format(e))
 
     async def add_task(self, execution :Awaitable, *args, **kwargs):
          async with self.__lock:
@@ -56,21 +61,20 @@ class Scheduler:
                         while not self.__queue.empty():
                             execution = await self.__queue.get()
                             task = self.__loop.create_task(execution())
-                            task.add_done_callback(lambda t: self.__tasks.discard(t))
-                            self.__tasks.add(task)
+                            task.add_done_callback(lambda t: self.__completed_queue.put_nowait(t))
 
-                    for completed_task in asyncio.as_completed(self.__tasks):
-                        try:
-                            result = await completed_task
-                            await self.__callback(result)
-                        except Exception as e:
-                            self.__logger.error(f"Task execution failed: {e}")
-                        finally:
-                            await asyncio.sleep(1)  
+                if not self.__completed_queue.empty():
+                    completed_task = await self.__completed_queue.get()
+                    try:
+                        result = await completed_task
+                        await self.__callback(result)
+                    except Exception as e:
+                        self.__logger.error("Task execution failed: {0}".format(e))
                 else:
-                    await asyncio.sleep(1) 
+                    await asyncio.sleep(1)
             except Exception as e:
-                self.__logger.error(f"Scheduler encountered an error: {e}")
+                self.__logger.error("Scheduler __asynciohandle function encountered an error: {0}".format(e))
+        
                     
     def __wrap_execution(self, execution: Awaitable, *args, **kwargs): 
         async def wrapper():
